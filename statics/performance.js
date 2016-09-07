@@ -13,8 +13,9 @@ function getPerformanceTiming () {
  
     //【重要】页面加载完成的时间
     //【原因】这几乎代表了用户等待页面可用的时间
+    //
     times.loadPage = t.loadEventEnd - t.navigationStart;
- 
+
     //【重要】解析 DOM 树结构的时间
     //【原因】反省下你的 DOM 树嵌套是不是太多了！
     times.domReady = t.domComplete - t.responseEnd;

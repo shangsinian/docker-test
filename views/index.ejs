@@ -2,8 +2,18 @@
 <html>
 <head>
 	<title>Hello Aliyun</title>
+	<script src="loghub-tracking.js"></script>
 </head>
 <body>
 	<h3>Hello aliyun</h3>
+	<script src="performance.js"></script>
+	<script type="text/javascript">
+		var logger = new window.Tracker('cn-qingdao.log.aliyuncs.com','shang-test','shang-log-store');
+		var performance = getPerformanceTiming()
+		for (var key in performance){
+			logger.push(key, performance[key]);
+		}
+		logger.logger();
+	</script>
 </body>
 </html>

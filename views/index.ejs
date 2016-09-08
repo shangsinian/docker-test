@@ -9,5 +9,22 @@
 </head>
 <body>
 	<h3>Hello aliyun</h3>
+
+	<button data-tc="n">step1</button>
+	<button data-tc="n">step2</button>
+	<button data-tc="k">step3</button>
+	<button data-tc="n">step4</button>
+	<button data-tc="n">step5</button>
+	<button data-tc="n">step6</button>
+	<button data-tc="k">step7</button>
+	<button data-tc="n">step8</button>
+	<button data-tc="n">step9</button>
+	<button data-tc="e">step10</button>
+
+	<script type="text/javascript">
+		document.querySelector('[data-tc=k]').onclick = function(event){
+			console.log(event)
+		}
+	</script>
 </body>
 </html>
